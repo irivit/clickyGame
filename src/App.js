@@ -18,19 +18,11 @@ function changePositions(array) {
 class App extends Component {
   state = {
     character,
-    currentScore: 0,
+    actualScore: 0,
     topScore: 0,
-    clicked: false,
+    clicked: [],
   };
 
-  handleClick = id => {
-    if (this.state.clicked === false) {
-      this.handleIncrement();
-      this.setState({ clicked: true });
-    } else {
-      this.handleReset();
-    }
-  };
 
   handleIncrement = () => {
     const newScore = this.state.actualScore + 1;
@@ -38,7 +30,8 @@ class App extends Component {
       actualScore: newScore
     });
     if (newScore >= this.state.topScore) {
-      this.setState({ topScore: newScore });
+      this.setState({ topScore: newScore 
+      });
     }
     else if (newScore === 12) {
       alert("You win!");
@@ -46,15 +39,22 @@ class App extends Component {
     this.handlePosition();
   };
 
+  handleClick = id => {
+    if (this.state.clicked.indexOf(id) === -1) {
+      this.handleIncrement();
+      this.setState({ clicked: this.state.clicked.concat(id) });
+    } else {
+      this.handleReset();
+    }
+  };
   handleReset = () => {
     this.setState({
-      currentScore: 0,
+      actualScore: 0,
       topScore: this.state.topScore,
       clicked: false
     });
     this.handlePosition();
   };
-
 
   handlePosition = () => {
     let changePosition = changePositions(character);
@@ -65,7 +65,7 @@ class App extends Component {
     return (
       <Wrapper>
         <NavBar
-          score={this.state.currentScore}
+          score={this.state.actualScore}
           topScore={this.state.topScore}
         />
         <Jumbotron />
@@ -74,15 +74,15 @@ class App extends Component {
 
             {this.state.character.map(character => (
               <Column size="md-3 sm-6">
-              <CharacterCard
-                key={character.id}
-                handleClick={this.handleClick}
-                handleIncrement={this.handleIncrement}
-                handleReset={this.handleReset}
-                handlePosition={this.handlePosition}
-                id={character.id}
-                image={character.image}
-              />
+                <CharacterCard
+                  key={character.id}
+                  handleClick={this.handleClick}
+                  handleIncrement={this.handleIncrement}
+                  handleReset={this.handleReset}
+                  handlePosition={this.handlePosition}
+                  id={character.id}
+                  image={character.image}
+                />
               </Column>
             ))}
           </Row>
