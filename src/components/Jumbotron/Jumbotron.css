@@ -1,0 +1,13 @@
+.jumbotron {
+    width: 100%;
+    font-size: 16px;
+    background-color: aliceblue;
+    height: auto;
+    font-family: 'Aclonica', sans-serif;
+   
+  }
+
+  .container{
+    align-items: center;
+  }
+  

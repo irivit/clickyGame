@@ -1,20 +1,16 @@
 import React from "react";
+import "./Navbar.css";
 
 const NavBar = props => (
-    <ul className="nav nav-tabs">
-        <li className="nav-item">
-            <h1>Clicky Game</h1>
-        </li>
-        <li className="nav-item">
-            <h1>Click an image to begin!</h1>
-        </li>
-        <li className="nav-item">
-            <h1>Score: <span> </span></h1>
-        </li>
-        <li className="nav-item">
-            <h1>Top Score: <span> </span></h1>
-        </li>
-    </ul>
+
+    <nav class="navbar sticky-top">
+        <ul className=" nav navbar sticky-top">
+            <li className="nav-item"> Clicky Game</li>
+            <li className="nav-item"> Click an image to begin! </li>
+            <li className="nav-item">Score: {props.score}</li>
+            <li className="nav-item">Top Score: {props.topScore}</li>
+        </ul>
+    </nav>
 );
 
 export default NavBar;
