@@ -1,74 +1,62 @@
 [
-    {
-      "id": 1,
-      "name": "name 1",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/5/52/La_noche_estrellada1.jpg",
-      "clicked": []
-    },
-    {
-      "id": 2,
-      "name": "name 2",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/687px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg",
-      "clicked": []
-    },
-    {
-      "id": 3,
-      "name": "name 3",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Meisje_met_de_parel.jpg/250px-Meisje_met_de_parel.jpg",
-      "clicked": []
-    },
-    {
-      "id": 4,
-      "name": "name 4",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/The_Kiss_-_Gustav_Klimt_-_Google_Cultural_Institute.jpg/290px-The_Kiss_-_Gustav_Klimt_-_Google_Cultural_Institute.jpg",
-      "clicked": []
-    },
-    {
-      "id": 5,
-      "name": "name 5",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Starry_Night_Over_the_Rhone.jpg/300px-Starry_Night_Over_the_Rhone.jpg",
-      "clicked": []
-    },
-    {
-      "id": 6,
-      "name": "name 6",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project.jpg/300px-Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project.jpg",
-      "clicked": []
-    },
-    {
-      "id": 7,
-      "name": "name 7",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Gustav_Klimt_046.jpg/290px-Gustav_Klimt_046.jpg",
-      "clicked": []
-    },
-    {
-      "id": 8,
-      "name": "name 8",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Dama_z_gronostajem.jpg/300px-Dama_z_gronostajem.jpg",
-      "clicked": []
-    },
-    {
-      "id": 9,
-      "name": "name 9",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg/300px-Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg",
-      "clicked": []
-    },
-    {
-      "id": 10,
-      "name": "name 10",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Grant_Wood_-_American_Gothic_-_Google_Art_Project.jpg/250px-Grant_Wood_-_American_Gothic_-_Google_Art_Project.jpg",
-      "clicked": []
-    },
-    {
-      "id": 11,
-      "name": "name 11",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Vincent_Willem_van_Gogh_128.jpg/250px-Vincent_Willem_van_Gogh_128.jpg",
-      "clicked": []
-    },
-    {
-      "id": 12,
-      "name": "name 12",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/e/e3/La_Scapigliata.jpg",
-      "clicked": []
-    }
-  ]
+  {
+    "id": 1,
+    "name": "La noche estrellada",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/52/La_noche_estrellada1.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Mona Lisa",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/687px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Meisje met de parel",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Meisje_met_de_parel.jpg/250px-Meisje_met_de_parel.jpg"
+  },
+  {
+    "id": 4,
+    "name": "The Kiss",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/The_Kiss_-_Gustav_Klimt_-_Google_Cultural_Institute.jpg/290px-The_Kiss_-_Gustav_Klimt_-_Google_Cultural_Institute.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Starry Night Over the Rhone",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Starry_Night_Over_the_Rhone.jpg/300px-Starry_Night_Over_the_Rhone.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Self Portrait",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project.jpg/300px-Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Gustav Klimt",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Gustav_Klimt_046.jpg/290px-Gustav_Klimt_046.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Dama z gronostajem",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Dama_z_gronostajem.jpg/300px-Dama_z_gronostajem.jpg"
+  },
+  {
+    "id": 9,
+    "name": "La nascita di Venere",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg/300px-Sandro_Botticelli_-_La_nascita_d_Venere_-_Google_Art_Project_-_edited.jpg"
+  },
+  {
+    "id": 10,
+    "name": "American Gothic",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Grant_Wood_-_American_Gothic_-_Google_Art_Project.jpg/250px-Grant_Wood_-_American_Gothic_-_Google_Art_Project.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Vincent Willem van Gogh",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Vincent_Willem_van_Gogh_128.jpg/250px-Vincent_Willem_van_Gogh_128.jpg"
+  },
+  {
+    "id": 12,
+    "name": "La Scapigliata",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e3/La_Scapigliata.jpg"
+  }
+]

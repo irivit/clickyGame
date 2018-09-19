@@ -1,23 +1,37 @@
 .navbar {
-    margin-top: 0;
+    margin-top: 15px;
     margin-right: 0;
     margin-left: 0;
     width: 100%;
     font-size: 16px;
-    color: #fff;
-    background-color: rgb(81,51,164);
-    height: auto;
-    font-family: 'Aclonica', sans-serif;
+    color: rgb(71, 71, 71);
+    background-color:rgb(244,176,15);
+    border-top: 4px rgb(71, 71, 71) solid;
+    border-bottom: 4px rgb(71, 71, 71) solid;
+    height: 100px;
+    font-family: 'Merienda', cursive;
+    position: fixed;
   }
   
-  .nav li {
+   li {
     display: inline-block;
-    padding: 26px 0;
+    padding-left: 100px ;
     width: 25%;
-  }
+  } 
   
   ul {
-    display: flex;
+    display: auto;
     align-items: center;
   }
   
+.name {
+    font-size: 40px;
+    font-family: 'Great Vibes', cursive;
+    font-weight: 1000;
+    margin-left: 10%;
+}
+.scores {
+    font-size: 20px;
+    font-weight: 700;
+    margin-right: 10%;
+}

@@ -3,11 +3,21 @@
     font-size: 16px;
     background-color: aliceblue;
     height: auto;
-    font-family: 'Aclonica', sans-serif;
+    font-family: 'Merienda', cursive;
+    color: rgb(48, 47, 47);
+    margin-top: 100px;
+    padding-bottom: 0;
+
    
   }
 
+  h1{
+    font-family: 'Great Vibes', cursive;
+    color: rgb(36, 35, 35);
+    font-size: 100px;
+  }
+
   .container{
-    align-items: center;
+    text-align: center;
   }
   

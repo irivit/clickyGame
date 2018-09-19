@@ -10,52 +10,65 @@ import Column from "./Column";
 import "./App.css";
 
 
+//This function change randomly the position of the paintings
 function changePositions(array) {
   array.sort(function (a, b) { return 0.5 - Math.random() });
   return array;
 };
 
 class App extends Component {
+
+//Setting the state
   state = {
     character,
     actualScore: 0,
     topScore: 0,
-    clicked: [],
+    clicked: []
   };
 
-
+//Function to handle the scores and control when the user win or loss
   handleIncrement = () => {
     const newScore = this.state.actualScore + 1;
-    this.setState({
-      actualScore: newScore
-    });
-    if (newScore >= this.state.topScore) {
-      this.setState({ topScore: newScore 
-      });
-    }
-    else if (newScore === 12) {
+    if (newScore === 12) {
       alert("You win!");
+      this.handleReset();
+    }else {
+      this.setState({
+        actualScore: newScore
+      })
+      if (newScore >= this.state.topScore) {
+        this.setState({ topScore: newScore 
+        });
+      }
     }
     this.handlePosition();
   };
 
+
+  //Function to listen when an image has been clicked
   handleClick = id => {
     if (this.state.clicked.indexOf(id) === -1) {
+      this.state.clicked.push(id);
       this.handleIncrement();
-      this.setState({ clicked: this.state.clicked.concat(id) });
+      this.setState({ clicked: this.state.clicked });
+      console.log(this.state.clicked);
     } else {
+      alert("You lost!");
       this.handleReset();
     }
   };
+  
+// Function to reset the game
   handleReset = () => {
     this.setState({
       actualScore: 0,
       topScore: this.state.topScore,
-      clicked: false
+      clicked: []
     });
     this.handlePosition();
   };
 
+  //Calling the function to rearrange the array
   handlePosition = () => {
     let changePosition = changePositions(character);
     this.setState({ character: changePosition });
@@ -87,8 +100,6 @@ class App extends Component {
             ))}
           </Row>
         </Container>
-
-
       </Wrapper>
     );
   }
